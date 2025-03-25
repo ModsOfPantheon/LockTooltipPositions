@@ -2,6 +2,8 @@
 
 Locks all tooltips for items, abilities and buffs to a static location on the screen.
 
+![image](https://github.com/user-attachments/assets/e1bd17c0-a9c6-4a56-a1ac-c40dd910f82a)
+
 Tooltips are anchored to the bottom left of the screen. Setting the xOffset to 0 and the yOffset to 0 will result in the tooltip appearing in the bottom left of the screen.
 Tooltips are clamped to the screen, so a large offset will not send the tooltip off the screen. A larger xOffset moves the tooltip to the right, a larger yOffset moves the tooltip up.
 
