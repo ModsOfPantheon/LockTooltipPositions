@@ -33,3 +33,13 @@ public class UIAbilityTooltipHook
         __instance.ClampToWindow();
     }
 }
+
+[HarmonyPatch(typeof(UITooltipPanel), nameof(UITooltipPanel.LateUpdate))]
+public class UITooltipPanelHook
+{
+    private static void Postfix(UITooltipPanel __instance)
+    {
+        Globals.SetPosition(__instance.RectTransform);
+        __instance.ClampToWindow();
+    }
+}
